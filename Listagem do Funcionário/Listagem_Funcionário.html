@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="Style.css">
+        <title>Listagem do Funcionário</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Listagem do Funcionário</h1>
+
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" name="promocoes">
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+            </nav>
+            
+            <table class="table table table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome Completo</th>
+                        <th>E-mail</th>
+                        <th>RG</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Número do PIS</th>
+                        <th>Login</th>
+                        <th>Senha</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Henrique Loiola Cruz</td>
+                        <td>henrique.cruz@gmail.com</td>
+                        <td>564231897-9</td>
+                        <td>963.852.741-11</td>
+                        <td>(88) 99478-4563</td> 
+                        <td>951.36987.14-2</td>
+                        <td>@henricruz</td>
+                        <td>Henri123</td>   
+                        <td>
+                            <a href="#">
+                                <img src="Ícones/Editar.svg" title="Editar">
+                            </a>
+
+                            <a href="#">
+                               <img src="Ícones/Lixeira.svg" title="Excluir">
+                            </a>
+                        </td>    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>

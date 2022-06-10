@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="Fonte - Noto Sans/NotoSans-Regular.ttf">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Cadastro do Cliente</title>
+</head>
+
+<body>
+    <section>
+        <form action="#" method="post">
+            <h1>Cadastro do Cliente</h1>
+            <fieldset>
+                <div class="container">
+                    <div class="col">
+                        <label>Nome Completo</label>
+                        <br>
+                        <input type="text"  placeholder="Informe o nome completo do cliente" required name="nome" id="nome" autocomplete="off" maxlength="50">
+                    </div>
+
+                    <div class="col">
+                        <label>E-mail</label>
+                        <br>
+                        <input type="text" placeholder="Informe o e-mail do cliente" required name="email" id="email" autocomplete="off" maxlength="50">
+                    </div>
+                
+                    <div class="col">
+                        <label>RG</label>
+                        <br>
+                        <input type="text" placeholder="Informe o RG do cliente" required name="rg" id="rg" autocomplete="off" maxlength="15">
+                    </div>
+
+                    <div class="col">
+                        <label>CPF</label>
+                        <br>
+                        <input type="text" placeholder="Informe o CPF do cliente" required name="cpf" id="cpf" autocomplete="off" maxlength="14" onkeypress="$(this).mask('000.000.000-00')">
+                    </div>
+
+                    <div class="col">
+                        <label>Telefone</label>
+                        <br>
+                        <input type="text" class="phone" placeholder="Informe telefone do cliente" required name="telefone" id="telefone" autocomplete="off" maxlength="13" onkeypress="$(this).mask('(00) 00000-0000')">
+                    </div>
+
+                    <div class="col">
+                        <label>CNH</label>
+                        <br>
+                        <input type="text" placeholder="Informe a CNH do cliente" required name="cnh" id="cnh" autocomplete="off" maxlength="9">
+                    </div>
+
+                    <div class="col">
+                        <label>Cidade</label>
+                        <br>
+                        <input type="text" placeholder="Informe a cidade do cliente" required name="cidade" id="cidade" autocomplete="off" maxlength="20">
+                    </div>
+
+                    <div class="col">
+                        <label>Estado</label>
+                        <br>
+                        <select name="estados">
+                            <option value="">Selecione o Estado do cliente</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <input type="submit" class="btn btn-dark" value="Cadastrar" name="submit">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Jquery/jquery-3.6.0.min.js"></script>
+    <script src="Jquery/jquery.mask.min.js"></script>
+    <script src="Jquery/jquery.mask.js"></script>
+    <script src="Javascript.js"></script>
+</body>
+
+</html>

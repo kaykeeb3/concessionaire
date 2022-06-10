@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-family: Noto Sans;
+    margin-top: 40px;
+    color:#fff;
+}
+
+.d-flex{
+    margin-left: -10px;
+}
+
+table{
+    background:#fff;
+}
+
+body{
+    background-image: url(Imagens/Background_2.png);
+    background-size: 100%;
+}

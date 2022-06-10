@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="Fonte - Noto Sans/NotoSans-Regular.ttf">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Cadastro do Funcionário</title>
+</head>
+
+<body>
+    <section>
+        <form action="#" method="post">
+            <h1>Cadastro do Funcionário</h1>
+            <fieldset>
+                <div class="container">
+                    <div class="col">
+                        <label>Nome Completo</label>
+                        <br>
+                        <input type="text"  placeholder="Informe o nome completo do funcionário" required name="nome" id="nome" autocomplete="off" maxlength="50">
+                    </div>
+
+                    <div class="col">
+                        <label>E-mail</label>
+                        <br>
+                        <input type="text" placeholder="Informe o e-mail do funcionário" required name="email" id="email" autocomplete="off" maxlength="50">
+                    </div>
+                
+                    <div class="col">
+                        <label>RG</label>
+                        <br>
+                        <input type="text" placeholder="Informe o RG do funcionário" required name="rg" id="rg" autocomplete="off" maxlength="15">
+                    </div>
+
+                    <div class="col">
+                        <label>CPF</label>
+                        <br>
+                        <input type="text" placeholder="Informe o CPF do funcionário" required name="cpf" id="cpf" autocomplete="off" maxlength="14" onkeypress="$(this).mask('000.000.000-00')">
+                    </div>
+
+                    <div class="col">
+                        <label>Telefone</label>
+                        <br>
+                        <input type="text" placeholder="Informe telefone do funcionário" required name="telefone" id="telefone" autocomplete="off" maxlength="13" onkeypress="$(this).mask('(00) 00000-0000')">
+                    </div>
+
+                    <div class="col">
+                        <label>Número do PIS</label>
+                        <br>
+                        <input type="text" placeholder="Informe o PIS do funcionário" required name="pis" id="pis" autocomplete="off" maxlength="14" onkeypress="$(this).mask('000.00000.00-0')">
+                    </div>
+
+                    <div class="col">
+                        <label>Login</label>
+                        <br>
+                        <input type="text" placeholder="Informe qual será o login do funcionário" required name="login" id="login" autocomplete="off" maxlength="40">
+                    </div>
+
+                    <div class="col">
+                        <label>Senha</label>
+                        <br>
+                        <input type="password" placeholder="Informe qual será a senha do funcionário" required name="senha" id="senha" autocomplete="off" maxlength="10">
+                    </div>
+
+                    <div class="col">
+                        <input type="submit" class="btn btn-dark" value="Cadastrar" name="submit">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Jquery/jquery-3.6.0.min.js"></script>
+    <script src="Jquery/jquery.mask.min.js"></script>
+    <script src="Jquery/jquery.mask.js"></script>
+    <script src="Javascript.js"></script>
+</body>
+
+</html>

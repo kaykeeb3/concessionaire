@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background: url(kayke.jpg);
+    margin-top: 20%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20% 0%;
+    box-shadow: 12px 12px 20px #000, 2px 6px 50px #000;
+    padding: 50px 20px;
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+input{
+    width: 100%;
+    height: 46px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.input-field{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    position: absolute;
+    top:0;
+    left: 0;
+    color: white;
+    transform: translateY(18px);
+    transition: .25s ease-in-out;
+}
+
+input:focus + label{
+    transform: translateY(-14px) scale(.8);
+    color:#26a96a
+}
+
+input:focus{
+    box-shadow: 0 1px 0 0 #26a96a;
+    border-bottom: #26a96a 1px solid;
+}
+
+.center{
+    text-align: center;
+}
+
+button{
+    background: transparent;
+    padding: 15px 50px;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    border:2px solid white;
+    margin: 20px;
+    cursor: pointer;
+    transition: ease-in-out .25s;
+}
+
+button:hover{
+    background: rgba(255, 0, 0, 0.459);
+}
+
+div a{
+    text-decoration: none;
+    color: white;
+    transition: .25s ease-in-out;
+}
+
+div a:hover{
+    color:#26a96a;
+}
+
+input:not(:placeholder-shown){
+    box-shadow: 0 1px 0 0 #26a96a;
+    border-bottom: #26a96a 1px solid;
+}
+
+input:not(:placeholder-shown) + label{
+    transform: translateY(-14px) scale(.8);
+}
+
+input::placeholder{
+    color:transparent;
+}

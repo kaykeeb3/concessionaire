@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="Style.css">
+        <title>Listagem de Promoções</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <h1>Listagem de Promoções</h1>
+
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" name="promocoes">
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+            </nav>
+
+            <table class="table table table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Código</th>
+                        <th>Modelo do Veículo</th>
+                        <th>Taxa percentual de desconto</th>
+                        <th>Data limite da promoção</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>BMW</td>
+                        <td>60%</td>
+                        <td>01/04/2022 00:00</td>  
+                        <td>
+                            <a href="#">
+                                <img src="Ícones/Editar.svg" title="Editar">
+                            </a>
+
+                            <a href="#">
+                               <img src="Ícones/Lixeira.svg" title="Excluir">
+                            </a>
+                        </td>    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>

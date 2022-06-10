@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(Imagens/Background_4.png);
+    background-size: 100%;
+    
+    
+}
+
+section{
+    background: #fff;
+    padding: 30px 5px;
+    border-radius: 40px;
+    box-shadow: 7px 7px 21px; /*Adiciona sombra nos elementos*/
+    max-width: 70vw; /*Tamanho máximo do elemento*/
+    text-align: center;
+}
+
+section h1{
+    padding: 40px 10px;
+    text-align: center;
+    font-family: Noto Sans;
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+input{
+    width: 80%;
+}
+
+select{
+    width: 80%;
+}
+
+label{
+    font-family: Noto Sans;
+}
