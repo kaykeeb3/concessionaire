@@ -18,6 +18,7 @@ Este projeto foi desenvolvido com uma variedade de tecnologias para proporcionar
 
 - **Back-end:**
   - PHP
+  - Ruby 
   - MySQL
 
 - **Versionamento:**
